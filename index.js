@@ -12,12 +12,12 @@ app.get("/", function(req, res) {
 });
 
 app.get("/api/whoami", function(req, res) {
-  let ipdaddress = req.ip;
+  let ipaddress = req.ip;
   let language = req.headers['accept-language'];
   let software = req.headers['user-agent'];
 
   res.json({
-    ipdaddress,
+    ipaddress,
     language,
     software
   });
